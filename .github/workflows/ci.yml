@@ -27,7 +27,7 @@ jobs:
 
       # Install install remark-cli remark-preset-lint-consistent with npm
       # Run preset remark-preset-lint-consistent for check if markdown respect rules
-  - name: Run markdown lint
-    run: |
-      npm install remark-cli remark-preset-lint-consistent
-      npx remark . --use remark-preset-lint-consistent --frail
+      - name: Run markdown lint
+        run: |
+          npm install remark-cli remark-preset-lint-consistent
+          npx remark . --use remark-preset-lint-consistent --frail
